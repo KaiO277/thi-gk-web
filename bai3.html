@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .logo{
+            width: 100%;
+            margin: auto;
+            position: relative;
+        }
+        .baco{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .menu {
+            width: 100%;
+            height: 40px;
+            margin: 7px 0px; 
+            background-color: blue;
+        }
+        .menu > ul {
+            
+            display: flex;
+            justify-content: space-around;
+            padding-right: 20px;
+        }
+        ul > li{
+            float: left;
+            list-style: none;
+            text-align: left;
+            color: white; 
+            border-right: 1px solid white;
+        }
+        .menu ul > li :last-child{
+            border-right: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            flex-grow: 50px;
+        }
+        .gdchinh{
+            float: left;           
+            margin: auto;
+        }
+        .tren{
+            height:80%;
+            float: left;
+        }
+        .duoi{
+            height:20%;
+            width:100%;
+            float: left;
+            background-color:blue;
+            text-align: center;
+            margin:10px;
+        }
+        .gdchinh .trai{
+            width: 20%; 
+            float: left; 
+            padding: 10px;      
+        }
+        .gdchinh .phai{
+            width: 75%;
+            float: left;
+            padding-left:10px;
+        }
+        .login{
+            justify-content:center;   
+        }
+        form{
+            display:flex;
+            border: 5px dashed rgb(107, 120, 234);
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px; 
+            flex-direction: column;
+            align-items:center;
+        }
+        button{
+            background-color:blue;
+            color: white;
+            margin-bottom: 10px;    
+        }
+        .anh{
+            max-width: 300px;
+            max-height: 300px;
+        }
+        .news .div_news{
+            display: flex;
+            float: left;
+            border-bottom: 3px dashed black;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        .anh_news{
+            max-width: 300px;
+            max-height: 300px;
+        }         
+        .anh_trai{
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            border-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="logo">
+            <img src="D:\nghĩa\web\thi gk\images\Logo.png" alt="">
+            <img src="D:\nghĩa\web\thi gk\images\flag.gif" alt="" class="baco">
+        </div>
+        <div class="menu">
+            <ul color="white">
+                <li>
+                    <a href="#">
+                        <img src="D:\nghĩa\web\thi gk\images\Home.gif" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>
+                            GIỚI THIỆU
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>
+                            TUYỂN SINH
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <h3>
+                        ĐÀO TẠO
+                       </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>NGHIÊU CỨU</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>HỢP TÁC</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <h3>LIÊN HỆ</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="gdchinh">
+            <div class="tren">
+            <div class="trai">
+                <div class="login">
+                    <form action="">
+                        <h3>Đăng nhập</h3>
+                        <input type="text" placeholder="Địa chị email">
+                        <br>
+                        <br>
+                        <input type="text" placeholder="Mật khẩu">
+                        <br>
+                        <br>
+                        <button type="submit"><b>Đăng nhập</b></button>
+                    </form>
+                </div>
+                <br>
+                <div class="trai_anh">
+                    <div class="anh_trai">
+                        <a href="#">
+                            <img src="D:\nghĩa\web\thi gk\images\Library01.png" alt="" class="anh">
+                        </a>
+                    </div>
+                    <div class="anh_trai">
+                        <a href="#">
+                            <img src="D:\nghĩa\web\thi gk\images\Library02.png" alt="" class="anh">
+                        </a>
+                    </div>
+                    <div class="anh_trai">
+                        <a href="#">
+                            <img src="D:\nghĩa\web\thi gk\images\Library03.png" alt="" class="anh">
+                        </a>
+                    </div>
+                    <div class="anh_trai">
+                        <a href="#">
+                            <img src="D:\nghĩa\web\thi gk\images\Library04.png" alt="" class="anh">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="phai">
+                <h1>Tin Tức & Sự Kiện</h1>
+                <div class="news">
+                    <h2>Chung kết cược thi BWD SICT 2020</h2>
+                    <div class="div_news">
+                        <img src="D:\nghĩa\web\thi gk\images\Image04.jpg" alt="" class="anh_news">
+                        <p>
+                            Nhằm mục tiêu nâng cao chất lượng đào tạo, đáp ứng nhu cầu nguồn
+                            nhân lực chất lượng cao, theo kịp cuộc cách mạng công nghiệp 4.0,
+                            Trường Đại học công nghệ Thông tin và Truyền thông Việt-Hàn đã phối 
+                            hợp với Khoa Công nghệ Thông tin và Truyền thông-Đại học Đà Nẵng
+                            tổ chức cuộc thi BWD-SICT-2020 "Best website design for students of
+                            information and communication technology". 
+                        </p>
+                    </div>
+                </div>
+                <div class="news">
+                    <h2>Hợp tác giữa VKU và Công ty LG Electronics Việt Nam</h2>
+                    <div class="div_news">
+                        <img src="D:\nghĩa\web\thi gk\images\Image02.jpg" alt="" class="anh_news">
+                        <p>
+                            Cơ hội hợp tác nghiên cứu khoa học, phát triển các ứng dụng công nghệ 
+                            và thực tập - việc làm cho sinh viên VKU trong các doanh nghiệp của 
+                            tập đoàn LG tại Việt Nam sau chuyến thăm và làm việc của đoàn công 
+                            tác công ty LG Electronics Việt Nam với Trường Đại Học CNTT&TT 
+                            Việt-Hàn  
+                        </p>
+                    </div>
+                </div>
+                <div class="news">
+                    <h2>Hào hứng ngày hội nhập học Đợt 2 của các tân Sinh viên VKU</h2>
+                    <div class="div_news">
+                        <img src="D:\nghĩa\web\thi gk\images\Image02.jpg" alt="" class="anh_news">
+                        <p>
+                            Do ảnh hưởng thời tiết, có mưa kéo dài, để tạo điều kiện cho sinh viên cho Thí sinh
+                            nhập học. Trường Đại học Công nghệ Thông tin và Truyền thông Việt-
+                            Hàn, Đại học Đà Nẵng thông báo cho thí sinh trúng tuyển theo phương thức xét tuyển kết quả
+                            thi THPT 2020 BỔ SUNG thời gian nhập học.  
+                        </p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <br>
+        <br>
+        <div class="duoi">
+            <p>@Bản quyền thuộc Trường Đại học CNTT&TT việt hàn- Đại học ĐN</p>
+        </div>
+    </div>
+    
+</div>
+    
+</body>
+</html>
